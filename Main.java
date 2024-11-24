@@ -2,6 +2,37 @@ import java.util.Scanner;
 public class Main{
     public static  void main(String[] args){
 
+
+
+     SimpleCalculator calculator = new SimpleCalculator();
+
+     double firstNum;
+     double secondNum;
+
+     Scanner calcNum = new Scanner(System.in);
+     System.out.println("Enter First Num");
+     firstNum = calcNum.nextDouble();
+     System.out.println("Enter Second Num");
+     secondNum = calcNum.nextDouble();
+
+     calculator.setFirstNumber(firstNum);
+     calculator.setSecondNumber(secondNum);
+
+     System.out.println("Addition = " + calculator.getAdditionResult());
+     System.out.println("Subtraction = " + calculator.getSubtractionResult());
+     System.out.println("multiplication = " + calculator.getMultiplicationResult());
+     System.out.println("division = " + calculator.getDivisionResult());
+     calcNum.nextInt();
+
+
+
+
+
+
+
+
+
+
     BankAccount bankAccount = new BankAccount();
 
     double inflow;
@@ -48,6 +79,8 @@ public class Main{
     outflow = amount.nextDouble();
 
     bankAccount.withDrawFunds(outflow, newInflow);
+
+
 
 
 
